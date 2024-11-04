@@ -1,0 +1,623 @@
+/* main page*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.glitch.global/248708ff-066e-45d0-b088-81de93c8e768/background.png?v=1727279739535');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 300;
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+
+}
+
+
+.links {
+    margin-right: 100px;
+    padding: 5px;
+    position: relative;
+
+}
+
+.links::before {
+    position: absolute;
+}
+
+
+.list-nav, .navbar {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    line-height: 20px;
+    list-style-type: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.link {
+    position: relative;
+}
+
+.link::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fb7252;
+    width: 0;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+.link:hover:after {
+    width: 100%;
+}
+
+
+.navbar:hover {
+    color: #fb7252;
+}
+
+.list-nav {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+.main_page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('https://cdn.glitch.global/248708ff-066e-45d0-b088-81de93c8e768/background.png?v=1727279739535');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.par {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 40%;
+    margin-bottom: auto;
+}
+
+
+.parTwo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.list {
+    display: inline-block;
+    padding: 0px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: #524C42;
+    border: 0.5px solid black;
+}
+
+.list:hover {
+    background-color: #F3CA52;
+    color: white;
+}
+
+
+button {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px 30px;
+    position: relative;
+    color:white;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+.main-button {
+    background-image: radial-gradient(circle at 32.06% 7.83%, #fb7252, transparent 100%),radial-gradient(circle at 53.88% 93.99%, #8E54E9, transparent 91%),radial-gradient(circle at 50% 50%, #f0e9f0, #f1f1f1 100%);
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px 30px;
+    position: relative;
+    color:white;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+
+.main-button:hover {
+    background-image:radial-gradient(circle at 49.45% 10.73%, #fb7252, transparent 100%),radial-gradient(circle at 87.88% 94.1%, #FFC837, transparent 100%),radial-gradient(circle at 50% 50%, #e4cea1, #ffffff 100%);
+    cursor: pointer;
+}
+
+.anchor-button {
+    text-decoration: none;
+}
+
+.image {
+    padding: 50px;
+    margin-top: 50px;
+}
+
+/*About*/
+
+.about-me-background {
+    background-image: url('https://cdn.glitch.global/248708ff-066e-45d0-b088-81de93c8e768/background-main2.png?v=1727279766192');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 35px;
+    color: #fb7252;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.about-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-about {
+    display: flex;
+}
+
+.image_about {
+    display: flex;
+    margin-bottom: 120px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.image-two {
+    padding: 20px;
+}
+
+.par-about {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 2;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 120px;
+    padding: 20px;
+}
+
+/* skills */
+
+#skills {
+    background-image: url('https://cdn.glitch.global/248708ff-066e-45d0-b088-81de93c8e768/background-main2.png?v=1727279766192');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.skills-page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icons-images {
+    padding: 20px;
+    width: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 50px;
+    line-height: 0%;
+}
+
+
+.skills-image {
+    background-image: url('https://cdn.glitch.global/248708ff-066e-45d0-b088-81de93c8e768/background.png?v=1727279739535');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+
+}
+
+.skills-image:hover {
+    background-image:radial-gradient(circle at 49.45% 10.73%, #fb7252, transparent 100%),radial-gradient(circle at 87.88% 94.1%, #FFC837, transparent 100%),radial-gradient(circle at 50% 50%, #e4cea1, #ffffff 100%);
+}
+
+.skills-page-two {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+
+/* certificates */
+
+.certificates-background {
+    background-image: url('https://cdn.glitch.global/248708ff-066e-45d0-b088-81de93c8e768/wave-haikei4.png?v=1727298255026');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.certificate-page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.certificate-image {
+    margin: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.certificate-image:hover {
+    transform: scale(1.1);
+}
+
+
+/* portfolio */
+
+.portfolio-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+.col {
+    margin: 15px;
+    border: 1px solid #91C8E4;
+    border-radius: 25px;
+    background-image: url('https://cdn.glitch.global/248708ff-066e-45d0-b088-81de93c8e768/background-main2.png?v=1727279766192');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    color: #404258 ;
+    text-align: center;
+}
+
+.card-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.card-border {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.cardline-one {
+    margin-bottom: 40px;
+}
+
+
+/*--Contact--*/
+
+.contact-background {
+    background-image: url('https://cdn.glitch.global/248708ff-066e-45d0-b088-81de93c8e768/wave-haikei4.png?v=1727298255026');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin-bottom: 50px;
+}
+
+.contact-form-background {
+    background-image: url('https://cdn.glitch.global/248708ff-066e-45d0-b088-81de93c8e768/background.png?v=1727279739535');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 500px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-top: 0%;
+    margin-bottom: auto;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+}
+
+.par-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.contact-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.form-label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.form-control-lg {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: #b9b1c6;
+}
+
+.button-contact-page {
+    display: flex;
+    justify-content: center;
+}
+
+.button-contact {
+    background-image: radial-gradient(circle at 32.06% 7.83%, #fb7252, transparent 100%),radial-gradient(circle at 53.88% 93.99%, #8E54E9, transparent 91%),radial-gradient(circle at 50% 50%, #f0e9f0, #f1f1f1 100%);
+    font-size: 17px;
+    width: 60%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px 30px;
+    position: relative;
+    color:white;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+.button-contact:hover {
+    background-image:radial-gradient(circle at 49.45% 10.73%, #fb7252, transparent 100%),radial-gradient(circle at 87.88% 94.1%, #FFC837, transparent 100%),radial-gradient(circle at 50% 50%, #e4cea1, #ffffff 100%);
+    cursor: pointer;
+}
+
+.text-bottom {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    color: white
+}
+
+.myBtn {
+    /*display: none;*/
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.myBtn:hover {
+    background-image:radial-gradient(circle at 49.45% 10.73%, #fb7252, transparent 100%),radial-gradient(circle at 87.88% 94.1%, #FFC837, transparent 100%),radial-gradient(circle at 50% 50%, #e4cea1, #ffffff 100%);
+}
+
+
+@media all and (max-width: 500px) {
+
+    .list-nav, .navbar {
+        font-size: 15px;
+    }
+
+
+    .par {
+        font-size: 17px;
+    }
+
+    .parTwo {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .main-button {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .image {
+        width: 350px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .image-two {
+        width: 350px;
+        margin-bottom: auto;
+    }
+
+    .par-about {
+        font-size: 15px;
+    }
+
+    .icons-images {
+        font-size: 15px;
+    }
+
+    .certificate-image {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 800px) {
+
+    .list-nav, .navbar{
+        font-size: 12px;
+        padding: 0px 0px;
+    }
+
+    .par {
+        font-size: 25px;
+    }
+
+    .parTwo {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .main-button {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .image {
+        width: 400px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .image-two {
+        width: 400px;
+        margin-bottom: auto;
+    }
+
+    .par-about {
+        font-size: 18px;
+    }
+
+    .icons-images {
+        font-size: 17px;
+    }
+
+    .certificate-image {
+        font-size: 17px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
